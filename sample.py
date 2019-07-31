@@ -27,7 +27,8 @@ uri = 'https://id.who.int/icd/entity'
 # HTTP header fields to set
 headers = {'Authorization':  'Bearer '+token, 
            'Accept': 'application/json', 
-           'Accept-Language': 'en'}
+           'Accept-Language': 'en',
+	   'API-Version': 'v2'}
            
 # make request           
 r = requests.get(uri, headers=headers, verify=False)
